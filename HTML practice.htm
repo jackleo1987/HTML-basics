@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>HTML basics</TITLE>
+</HEAD>
+<BODY>
+
+<P><B>Standard HTML</B></P>
+
+<H1>Heading H1</H1>
+<H2>Heading H2</H2>
+<H3>Heading H3</H3>
+<H4>Heading H4</H4>
+<H5>Heading H5</H5>
+<H6>Heading H6</H6>
+
+<P>Paragraph</P>
+
+<UL>
+<LI>Unordered list</LI>
+<LI>Unordered list</LI>
+<LI>Unordered list</LI>
+</UL>
+
+<OL>
+<LI>Ordered list</LI>
+<LI>Ordered list</LI>
+<LI>Ordered list</LI>
+</OL>
+
+
+        <p>This is regular text </p>
+        <p><b>bold text </b></p>
+        <p><big> big text </big></p>
+        <p><i> italic text </i></p>
+        <p><small> small text </small></p>
+        <p><strong> strong text </strong></p>
+        <p><sub> subscripted text </sub></p>
+        <p><sup> superscripted text </sup></p>
+        <p><ins> inserted text </ins></p>
+        <p><del> deleted text </del></p>
+
+<!-- horizontal line, can have a width of x pixels (px) or x % (percentage of screen coverage) -->
+<hr width="50px" align="CENTER"/>
+
+<P><B>HTML5</B></P>
+
+<a href=""http://www.sololearn.com"></a>
+
+<table border="1px">
+	<tr>
+		<th>Column 1 heading</th>
+		<th>Column 2 heading</th>
+		<th>Column 3 heading</th>
+	</tr>
+	<tr>
+		<td colspan="2">blank</td>
+		<td rowspan="2">blank</td>
+	</tr>
+	<tr>
+		<td>blank</td>
+		<td>blank</td>
+		<td>blank</td>
+	</tr>
+</table>
+
+<audio src="http://www.sololearn.com/uploads/audio.mp3" controls autoplay loop>
+Audio element not supported by your browser
+</audio>
+
+<BR>
+
+<video src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4" controls autoplay loop>
+Video is not supported by your browser
+</video>
+
+<div>
+<P>Status:</P>
+<progress min="0" max="100" value="35"> 
+</progress>
+</div>
+
+<div>
+<img src="http://www.sololearn.com/images/tree.jpg" alt="Image not supported" height="300" />
+</div>
+
+
+<svg width="1000" height="400">
+   	<circle cx="100" cy="100" r="50" fill="orange" />
+	<rect width="150" height="75" x="200" y="100" fill="green" />
+   	<line x1="400" y1="100" x2="450" y2="50" stroke="black" />
+    	<polyline points="500 100, 550 120, 600 300" fill="red" />
+   	<ellipse cx="750" cy="100" rx="100" ry="50" fill="blue" />
+	<polygon points="900 100, 950 300, 1000 100" fill="yellow" />
+</svg>
+
+<!-- for "circle", cx is the position of the centre of the circle on the x axis, cy is the position of the centre of the circle on the y axis, r is the radius size -->
+<!-- for "rect", x defines the position of the left of the rectangle, y defines the position of the top of the rectangle.
+<!-- for "line", x1 and y1 are the starting coordinates, x2 and y2 are the finishing coordinates. -->
+<!-- "polyline" creates a shape built from multiple lines. Points are the polyline's coordinates. -->
+<!-- "ellipse" is similar to a circle, however the radius along the x axis and the radius along the y axis can be altered to deform the circle. -->
+<!-- the "polygon" element is used to create a graphic with at least three sides. The polygon element is unique because it automatically closes off the shape for you. -->
+<!-- "fill" attribute is used for 2D shapes, "stroke" is used for 1D lines -->
+
+
+<form>
+    <label>Examples of input boxes:<BR></label>
+    	<input id="user" name="username" type="text" autofocus autocomplete required/>
+	<input type="submit" value="Submit"/>
+	<input id="mysearch" name="searchitem" type="search" />
+	<input id="email" name="email" type="email" placeholder="john.smith@example.com" />
+	<input id="url" name="url" type="url" placeholder="example.com" />
+	<input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+</form>
+
+<!-- The ID of the datalist element must match with the list attribute of the input box. -->
+
+<input id="car" type="text" list="colors" />
+<datalist id="colors">
+    <option value="Red">
+    <option value="Green">
+    <option value="Yellow">
+</datalist>
+
+</BODY>
+</HTML>
